@@ -1,6 +1,6 @@
 ---
 date: 2024-10-30
-title: Shouki's wiki
+title: One-Shot Signature
 ---
 
 # Overview

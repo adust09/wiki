@@ -13,7 +13,7 @@ I like to discuss and work together with various people on projects. Please feel
 ## Selected blog posts
 
 - [[Collaborative Coin Flipping]]
-- [[MMR]]
+- [[Merkle Mountain Range]]
 - [[One-Shot Signature]]
 
 
