@@ -15,6 +15,7 @@ I like to discuss and work together with various people on projects. Please feel
 - [[Collaborative Coin Flipping]]
 - [[Merkle Mountain Range]]
 - [[One-Shot Signature]]
+- [[VOLE in the Head]]
 
 
 ## Projects
