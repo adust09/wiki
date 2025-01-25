@@ -3,6 +3,7 @@ import { QuartzComponent } from "./components/types"
 import { ValidLocale } from "./i18n"
 import { PluginTypes } from "./plugins/types"
 import { Theme } from "./util/theme"
+import { SocialImageOptions } from "./util/og"
 
 export type Analytics =
   | null
@@ -57,6 +58,8 @@ export interface GlobalConfiguration {
    */
   baseUrl?: string
   theme: Theme
+  generateSocialImages: boolean | Partial<SocialImageOptions>
+
   /**
    * Allow to translate the date in the language of your choice.
    * Also used for UI translation (default: en-US)
