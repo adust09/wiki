@@ -1,6 +1,6 @@
 ---
 date: 2025-01-03
-title: Collaborative Coin Flipping
+title: GGM Tree
 ---
 A method for generating 2k bits of randomness from k bits of seed is Goldreich-Goldwasser-Micali (GGM).
 It is used in MPC and game theory as a protocol for generating random outcomes fairly and securely by multiple participants without a trusted third party.

@@ -1,6 +1,6 @@
 ---
 date: 2024-12-25
-title: Merkle Mountain Range
+title: VOLE in the Head
 ---
 # Overview
 
