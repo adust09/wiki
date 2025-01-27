@@ -19,6 +19,7 @@ export default (() => {
 
     const iconPath = joinSegments(baseDir, "static/icon.png")
     const ogImagePath = `https://${cfg.baseUrl}/static/og-image.png`
+    const extension = "webp"
 
     return (
       <head>
@@ -34,6 +35,10 @@ export default (() => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image:type" content={`image/${extension}`} />
+        <meta property="og:image:alt" content={description} />
+
         {cfg.baseUrl && <meta property="og:image" content={ogImagePath} />}
         <meta property="og:width" content="1200" />
         <meta property="og:height" content="675" />
