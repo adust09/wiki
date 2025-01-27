@@ -1,6 +1,6 @@
 ---
 date: 2024-09-30
-title: Shouki's wiki
+title: Home
 ---
 
 Hi and welcome!
