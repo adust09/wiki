@@ -1,8 +1,7 @@
 ---
 date: 2025-01-30
-title: VOLE
+title: What is the VOLE
 ---
-# What is the VOLE
 
 VOLE(:Vector Oblivious Linear Evaluation) is a 2PC protocol that efficiently performs vector operations while maintaining confidentiality, and was proposed as an extension of OT(:Oblivious Transfer).
 Recently, LPN-based Variant and hybrid models with OT have also been proposed.
