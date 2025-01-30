@@ -1,6 +1,6 @@
 ---
 date: 2025-01-30
-title: VOLE in the Head
+title: VOLE
 ---
 # What is the VOLE
 
