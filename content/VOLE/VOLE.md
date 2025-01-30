@@ -29,7 +29,7 @@ Receiver
 - $\vec{m}\in{F^n_p}$: operation result received by the verifier
 
 The following is an example for p=5, n=3.
-![image info](./image/example.png)
+![alt text](./image/example.png)
 
 So what exactly is the composition of VOLE Functionality as a black box?
 The motivation for VOLE Functionality is that we want to construct a correlation while keeping our information hidden. To achieve this cryptographically, Oblivious Transfer can be used.
@@ -40,9 +40,9 @@ Oblivious Transfer is a building block in the Garbled Circuit, a type of MPC con
 This is a protocol in which a Sender has two messages and sends the one selected by the Receiver. However, the Sender cannot know which message was selected, and the Receiver cannot obtain the message that was not selected.
 Specifically, it is designed based on public key cryptography, and the Sender sends a message according to the bit (0/1) selected.
 
-![image info](./image/ot.png)
+![alt text](./image/ot.png)
 
 This is used in VOLE as follows.
-![image info](./image/correlation.png)
+![alt text](./image/correlation.png)
 
 Since only one message can be sent in a basic OT, constructing an n-vector VOLE requires repeating n OTs, so the communication cost increases linearly with the length of the vector. Fortunately, 1-out-of2 OTs can be extended to k-out-of n OTs, and the communication cost can be dropped to O(log n).
