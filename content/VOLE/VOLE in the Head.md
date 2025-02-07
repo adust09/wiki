@@ -22,6 +22,20 @@ Petter et al. propose the PQ Signature scheme: [FAEST](https://faest.info/) as a
 - In Quicksilver, the following design is used. In Quicksilver, Sender: Verifier, Receiver: Prover, but in VOLE itH, Sender: Prover, Receiver: Verifier.
 - In the past, VOLE-based ZKs (e.g. Quicksilver) did not reveal the $\Delta$ to the prover in order to achieve binding in the VOLE Commitment. This is the reason why it is a Designed Verifier. In VOLE itH, the commitment scheme is made VOLE-independent (hash-based vector commitment), which makes the $\Delta$ public. $\Delta$ can be made public, and as a result, it has been transformed into a public verifiable protocol.
 
+
+Now let's look at the Pros/Cons of VOLE itH.
+**Pros**
+- Fast proving
+- Memory efficient
+- Without trusted setup
+- Non-Interactive
+
+**Cons**
+- Linear proof size
+- Communication cost
+
+Compared to [[Quicksilver]], Communication cost is also reduced, so you should really only focus on Proof size!
+
 # All-but-one Vector Commitment
 
 This section describes Vector Commitment, which is important in VOLE itH.
