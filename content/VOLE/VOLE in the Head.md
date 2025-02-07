@@ -3,9 +3,15 @@ date: 2025-02-07
 title: VOLE in the Head
 ---
 
+I recommend reading them in this order. 
+
+1. [[What is the VOLE]]
+2. [[Quicksilver]]
+3. [[VOLE in the Head]]
+
 # Background
 
-Conventional VOLE-based ZKs have limited applications because they are designed verifiers that require interaction to generate VOLE correlations. Therefore, [Petter](https://scholar.google.dk/citations?user=1k1mPNAAAAAJ&hl=en) et al. devised VOLE in the Head, a public verifiable VOLE-based ZK based on [Quicksilver](https://eprint.iacr.org/2021/076.pdf) and [MPC in the Head](https://csrc.nist.gov/csrc/media/Projects/post-quantum-cryptography/documents/pqc-seminars/presentations/13-intro-mpc-in-the-head-05212024.pdf).
+Conventional VOLE-based ZKs have limited applications because they are designed verifiers that require interaction to generate VOLE correlations. Therefore, [Petter](https://scholar.google.dk/citations?user=1k1mPNAAAAAJ&hl=en) et al. devised VOLE in the Head, a public verifiable VOLE-based ZK based on '[[Quicksilver]] and [MPC in the Head](https://csrc.nist.gov/csrc/media/Projects/post-quantum-cryptography/documents/pqc-seminars/presentations/13-intro-mpc-in-the-head-05212024.pdf).
 
 The extension to the Public-coin Protocol enabled the use of the Fiat-[Shamir transformation](https://en.wikipedia.org/wiki/Fiat%E2%80%93Shamir_heuristic), transforming it into a NIZK VOLE-based ZK.
 Petter et al. propose the PQ Signature scheme: [FAEST](https://faest.info/) as an application of VOLE itH, and its further application to a [quantum distributed ledger system](https://eprint.iacr.org/2025/113.pdf) that is resistant to secret money transfers.
@@ -46,8 +52,12 @@ Binding-Hiding is secured by a hash function.
 
 # Protocol Overview
 The entire protocol is as follows.
-Strictly speaking, there will be additional Challenges associated with Consistency Check and Fiat-Shamir, which I did not mention in this blog.
+
 ![[vole-ith.png]]
+
+Strictly speaking, there will be additional Challenges associated with Consistency Check and Fiat-Shamir, which I did not mention in this blog.
+However, I think it is enough to explain VOLE itH's motivation to make it Public verifiable.
+
 # References
 - https://csrc.nist.gov/csrc/media/Projects/post-quantum-cryptography/documents/pqc-seminars/presentations/15-vole-in-the-head-06182024.pdf#page=24.00
 - https://youtu.be/9ToR-IfZXb4?feature=shared
