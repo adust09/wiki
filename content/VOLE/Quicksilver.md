@@ -71,6 +71,7 @@ Prover generates a bit string $\vec{u}$ consisting of 0/1 and sends it to Verifi
 Verifier sends back $m_0=\Delta+\vec{k}$ and $m_1=\vec{k}$ according to the bit sequence.
 
 By repeating this according to the length of vector, prover can generate $\vec{m}=\vec{u}\Delta+\vec{k}$.
+Strictly speaking, Softspoken OT based on [[GGM Tree]] is used.
 
 ## Proving phase
 

@@ -11,5 +11,6 @@ Here is a space to share my notes and ideas.
 - [[Collaborative Coin Flipping]]
 - [[Merkle Mountain Range]]
 - [[One-Shot Signature]]
+- [[What is the VOLE]]
+- [[Quicksilver]]
 - [[VOLE in the Head]]
-
