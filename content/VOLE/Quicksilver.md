@@ -2,9 +2,10 @@
 date: 2025-02-07
 title: Quicksilver
 ---
+I have explained [[What is the VOLE]] previously, and this time I will explain the Quicksilver protocol, which is an efficient VOLE-based ZK.
 
 This blog will describe the Quicksilver configuration, known as an efficient VOLE-based ZK.
-## 1. Pros/Cons
+# Pros/Cons
 Not limited to Quicksilver, VOLE-based ZKs have the following characteristics
 
 **Pros**
@@ -30,7 +31,7 @@ In other words, if we do not pay attention to the issue of proof size, we can sa
 This characteristic has attracted attention in the context of Client-side proving, zkTLS, and others.
 Personally, I think it is also compatible with zkVM.
 
-# 2. Commitment scheme
+# Commitment scheme
 
 The VOLE Commitment scheme not only satisfies Hiding and Binding, but also has Additive Homomorphism.
 This makes it possible to realize a lightweight Commitment scheme and efficiently generate Proofs even for large circuits.
@@ -54,14 +55,14 @@ $$m_c=w_c\Delta+k_c$$
 
 Additive homomorphism can also be used for scalar products.
 
-# 3. The Quicksilver Protocol
+# The Quicksilver Protocol
 
 
 Quicksilver divides the VOLE correlations into a Preprocessing phase in which the VOLE correlations are calculated in advance, and an Online phase in which the VOLE correlations are actually Proofed & Verified.
 
 ![alt text](quicksilver_overview.png)
 
-## 3.1 Preprocessing phase
+## Preprocessing phase
 
 Prover and Verifier cooperate to generate the VOLE Correlation. As mentioned earlier, since $\Delta$ and $k$ are secret information, it is necessary to generate a VOLE Correlation while keeping each other's information hidden.
 Therefore, information is exchanged using Oblivious Transfer. Here, the Sender is the Verifier and the Receiver is the Prover.
@@ -71,7 +72,7 @@ Verifier sends back $m_0=\Delta+\vec{k}$ and $m_1=\vec{k}$ according to the bit 
 
 By repeating this according to the length of vector, prover can generate $\vec{m}=\vec{u}\Delta+\vec{k}$.
 
-## 3.2 Proving phase
+## Proving phase
 
 Here, wire value:$w$ at each gate of Circuit is committed and opened using the VOLE Correlation obtained in the preprocessing phase. 1.
 
