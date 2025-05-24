@@ -16,3 +16,4 @@ Here is a space to share my notes and ideas.
 - [[VOLE in the Head]]
 - [[All but one Vector Commitment]]
 - [[THM]]
+- [[Revise the Law of Identity]]
