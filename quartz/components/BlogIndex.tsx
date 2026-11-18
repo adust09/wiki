@@ -2,12 +2,12 @@ import { resolveRelative } from "../util/path"
 import { getDate } from "./Date"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-const EXCLUDED_SLUGS = new Set(["index", "cv"])
+const EXCLUDED_SLUGS = new Set(["index", "blog", "cv"])
 
 const isoDate = (d: Date): string => d.toISOString().slice(0, 10)
 
 const BlogIndex: QuartzComponent = ({ fileData, allFiles, cfg }: QuartzComponentProps) => {
-  if (fileData.slug !== "index") return null
+  if (fileData.slug !== "blog") return null
 
   const posts = allFiles
     .filter(

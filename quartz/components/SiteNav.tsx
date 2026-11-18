@@ -21,11 +21,8 @@ const SiteNav: QuartzComponent = (props: QuartzComponentProps) => {
         </a>
       )}
       <div class="sitenav-links">
-        {!isHome && <a href={root}>index</a>}
-        <a href={resolveRelative(fileData.slug!, "cv" as FullSlug)}>cv</a>
-        <a href="https://github.com/adust09" rel="noopener">
-          github
-        </a>
+        <a href={root}>cv</a>
+        <a href={resolveRelative(fileData.slug!, "blog" as FullSlug)}>blog</a>
         <DarkBtn {...props} />
       </div>
     </nav>
