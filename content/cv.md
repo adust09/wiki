@@ -7,20 +7,20 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
 
 ## Current
 
-- **Nyx Foundation** — Research engineer, 2025–
+- **[Nyx Foundation](https://nyx.foundation)** — Research engineer, 2025–
   Leads research and development on protocol safety and cryptographic implementation: formal verification of post-quantum signature schemes for Ethereum upgrades and bug discovery in Ethereum clients.
-- **MynaWallet** — Software engineer, 2025–
+- **[MynaWallet](https://mynawallet.jp)** — Software engineer, 2025–
   Blockchain and backend development.
-- **Ethereum Foundation** — Grantee, 2025–
+- **[Ethereum Foundation](https://ethereum.foundation)** — Grantee, 2025–
   Research on VOLE-based zero-knowledge proofs.
 - **Independent** — 2024–
   Applied R&D combining Ethereum and cryptographic theory.
 
 ## Previous
 
-- **Hana Network** — Interim CTO, 2024; Project Manager, 2023–2024
+- **[Hana Network](https://www.hana.network)** — Interim CTO, 2024; Project Manager, 2023–2024
   Hana is a decentralized privacy layer with trustless interoperability.
-- **Rakuten** — Software engineer, 2022–2023
+- **[Rakuten](https://global.rakuten.com/corp/)** — Software engineer, 2022–2023
 
 ## Selected Work
 
@@ -40,13 +40,13 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
 
 ## Talks
 
-- Ethereum's post-quantum readiness, BSAQ 2026 (BGIN), University of Tokyo, Tokyo, November 2026 (upcoming)
+- Ethereum's post-quantum readiness, [BSAQ 2026](https://bgin-global.org/events/20261130-bsaq2026) (University of Tokyo IIS and BGIN), University of Tokyo, Tokyo, November 2026 (upcoming)
 - [Building Resilient Ethereum: Networking, PQ Security & Verified Consensus](https://cfp.devcon.org/devcon8/talk/ER8EHM/), Resilient Networking Hub workshop with Manu Sheel Gupta, Devcon 8, Mumbai, 2026
-- hs-libp2p: A Haskell Implementation of the libp2p Stack, Lightning Talk, Devcon 8, Mumbai, 2026
-- CL Client in Lean: Implementing a CL client in Lean with Rust FFI, session facilitator, Cambridge Formal Verification Workshop, Jesus College, Cambridge, 2026
+- [hs-libp2p: A Haskell Implementation of the libp2p Stack](https://cfp.devcon.org/devcon8/talk/MJ7SP9/), Lightning Talk, Devcon 8, Mumbai, 2026
+- [CL Client in Lean: Implementing a CL client in Lean with Rust FFI](https://www.youtube.com/watch?v=WCghlOzlaCE&list=PLBMi27NTohJc&t=8780s), session lead in the joint formal verification session, [Ethereum Foundation Fast Finality Workshop](https://consensus.ethereum.foundation/cambridge/) and FV Workshop, Jesus College, Cambridge, 2026
 - Definition and Standardization of Post-Quantum Cryptography Readiness in Blockchain, talk, fireside chat and roundtable, Operational Resilience and Network Security of Layer 1 Networks (Ethereum Foundation GPS), King's College, Cambridge, 2026
-- Building Community in Asia & Beyond, panel, ETHTaipei, Taipei, 2026 (representing Merkle Japan)
-- Verity, Ethproofs Call #9, online, 2026
+- Building Community in Asia & Beyond, panel, [ETHTaipei](https://ethtaipei.org), Taipei, 2026 (representing Merkle Japan)
+- Verity, [Ethproofs Call #9: Formal Verification](https://forkcast.org/calls/ethproofs/009/), online, 2026
 - [Programmable Cryptography and Smart Contract](https://archive.devcon.org/devcon-7/programmable-cryptography-and-smart-contract/), Lightning Talk, Devcon SEA, Bangkok, 2024
 
 [Devcon speaker page](https://app.devcon.org/speakers/shouki-tsuda)
@@ -60,7 +60,7 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
 
 ## Education
 
-- **Kyushu Institute of Technology** — B.Eng. in Information Engineering, 2018–2022
+- **[Kyushu Institute of Technology](https://www.kyutech.ac.jp)** — B.Eng. in Information Engineering, 2018–2022
 
 ## Links
 
