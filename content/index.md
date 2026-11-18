@@ -36,9 +36,12 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
   - [hs-libp2p](https://github.com/adust09/hs-libp2p): author and maintainer of a Haskell implementation of libp2p, with more than 1,400 tests and interoperability tests against other implementations, developed with outside contributors.
   - [libp2p-fv](https://github.com/NyxFoundation/libp2p-fv) and [p2p-asm](https://github.com/NyxFoundation/p2p-asm): cross-layer formal verification of Ethereum's GossipSub over QUIC, and a Lean 4 formalization of a verified libp2p implementation over QUIC.
 - **SSZ**: [nyx-ssz](https://github.com/NyxFoundation/nyx-ssz) (a Rust SSZ implementation with Aeneas/Lean refinement proofs) and [bend-ssz](https://github.com/adust09/bend-ssz) (an SSZ serialization layer written in Bend).
-- **Writing and curation**
-  - [Mastering Ethereum, 2nd edition, Japanese translation](https://adust09.github.io/ethereumbook-develop-jp/) ([repository](https://github.com/adust09/ethereumbook-develop-jp)), co-translated with Yukishige Nakajo and Wataru Shinohara.
-  - [awesome-vole](https://github.com/adust09/awesome-vole): a curated list of VOLE (vector oblivious linear evaluation) research and implementations.
+- **Curation**: [awesome-vole](https://github.com/adust09/awesome-vole), a curated list of VOLE (vector oblivious linear evaluation) research and implementations.
+
+## Writing
+
+- A book on programmable cryptography (in progress).
+- [Mastering Ethereum, 2nd edition, Japanese translation](https://adust09.github.io/ethereumbook-develop-jp/) ([repository](https://github.com/adust09/ethereumbook-develop-jp)), co-translated with Yukishige Nakajo and Wataru Shinohara.
 
 ## Talks
 
