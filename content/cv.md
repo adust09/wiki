@@ -12,6 +12,7 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
 - **MynaWallet** — Software engineer, 2025–
   Blockchain and backend development.
 - **Ethereum Foundation** — Grantee, 2025–
+  Research on VOLE-based zero-knowledge proofs.
 - **Independent** — 2024–
   Applied R&D combining Ethereum and cryptographic theory.
 
@@ -28,7 +29,7 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
   - [cl-asm](https://github.com/NyxFoundation/cl-asm) and [LeanAsm](https://github.com/NyxFoundation/LeanAsm): a prototype consensus-layer state transition function in Lean 4-verified RISC-V assembly, built on a reusable verified-assembly foundation (RV64, with an x86-64 backend), plus the companion SSZ library [ssz-asm](https://github.com/NyxFoundation/ssz-asm).
   - [ethereum-proof-atlas](https://github.com/NyxFoundation/ethereum-proof-atlas): a catalogue of Ethereum-related formal proofs that can be verified locally.
   - [formal-eth](https://github.com/NyxFoundation/formal-eth): a curated overview of formal verification work on Ethereum.
-- **Verity** ([@verityclient](https://x.com/verityclient)): Nyx Foundation's Ethereum consensus-layer client, built around formal verification in Lean 4.
+- **[Verity](https://github.com/NyxFoundation/verity)** ([@verityclient](https://x.com/verityclient)): Nyx Foundation's formally verified Ethereum consensus-layer client. Rust code is translated to Lean with Aeneas and proved there ([proofs](https://github.com/NyxFoundation/verity-aeneas-proofs)), with a Lean core called over FFI and Kani model checking. It has found specification bugs in leanSpec and a u64 overflow.
 - **libp2p**
   - [hs-libp2p](https://github.com/adust09/hs-libp2p): author and maintainer of a Haskell implementation of libp2p, with more than 1,400 tests and interoperability tests against other implementations, developed with outside contributors.
   - [libp2p-fv](https://github.com/NyxFoundation/libp2p-fv) and [p2p-asm](https://github.com/NyxFoundation/p2p-asm): cross-layer formal verification of Ethereum's GossipSub over QUIC, and a Lean 4 formalization of a verified libp2p implementation over QUIC.
@@ -40,15 +41,19 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
 ## Talks
 
 - Ethereum's post-quantum readiness, BSAQ 2026 (BGIN), University of Tokyo, Tokyo, November 2026 (upcoming)
-- hs-libp2p: A Haskell Implementation of the libp2p Stack, Lightning Talk, Devcon, 2026
-- Building Resilient Ethereum, with Manu Sheel Gupta (libp2p), Devcon, 2026 — presented the post-quantum P2P part; also co-hosted the Resilient Networking Hub (libp2p Hub) during Devcon
-- CL Client in Lean, session facilitator, Cambridge, 2026 — shared the Verity design and led the discussion on Lean 4 and Rust integration
-- Building Community in Asia & Beyond, panel, ETHTaipei, Taipei, 2026 — representing Merkle Japan
+- [Building Resilient Ethereum: Networking, PQ Security & Verified Consensus](https://cfp.devcon.org/devcon8/talk/ER8EHM/), Resilient Networking Hub workshop with Manu Sheel Gupta, Devcon 8, Mumbai, 2026
+- hs-libp2p: A Haskell Implementation of the libp2p Stack, Lightning Talk, Devcon 8, Mumbai, 2026
+- CL Client in Lean: Implementing a CL client in Lean with Rust FFI, session facilitator, Cambridge Formal Verification Workshop, Jesus College, Cambridge, 2026
+- Definition and Standardization of Post-Quantum Cryptography Readiness in Blockchain, talk, fireside chat and roundtable, Operational Resilience and Network Security of Layer 1 Networks (Ethereum Foundation GPS), King's College, Cambridge, 2026
+- Building Community in Asia & Beyond, panel, ETHTaipei, Taipei, 2026 (representing Merkle Japan)
+- Verity, Ethproofs Call #9, online, 2026
 - [Programmable Cryptography and Smart Contract](https://archive.devcon.org/devcon-7/programmable-cryptography-and-smart-contract/), Lightning Talk, Devcon SEA, Bangkok, 2024
+
+[Devcon speaker page](https://app.devcon.org/speakers/shouki-tsuda)
 
 ## Community
 
-- Representative of Merkle Japan, incorporated in October 2026.
+- Founder and Representative Director of Merkle Japan, a general incorporated association established in October 2026; co-hosted the Resilient Networking Hub (libp2p Hub) at Devcon 8.
 - Organised Advanced Cryptography Program (ACP) 2026, part of the cryptography and blockchain study group at the University of Tokyo.
 - Founded [Bitpickers](https://kyutech-bc.connpass.com/), a blockchain research community in Japan.
 - Organised [Progcrypto Camp](https://luma.com/1rg8psb1) (2024), a four-day cryptography camp for Ethereum developers.
