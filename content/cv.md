@@ -21,8 +21,26 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
   Hana is a decentralized privacy layer with trustless interoperability.
 - **Rakuten** — Software engineer, 2022–2023
 
+## Selected Work
+
+- **Formal verification of Ethereum**
+  - [formal-leanSpec](https://github.com/NyxFoundation/formal-leanSpec): Lean 4 formalization of Ethereum's lean consensus specification.
+  - [cl-asm](https://github.com/NyxFoundation/cl-asm) and [LeanAsm](https://github.com/NyxFoundation/LeanAsm): a prototype consensus-layer state transition function in Lean 4-verified RISC-V assembly, built on a reusable verified-assembly foundation (RV64, with an x86-64 backend), plus the companion SSZ library [ssz-asm](https://github.com/NyxFoundation/ssz-asm).
+  - [ethereum-proof-atlas](https://github.com/NyxFoundation/ethereum-proof-atlas): a catalogue of Ethereum-related formal proofs that can be verified locally.
+  - [formal-eth](https://github.com/NyxFoundation/formal-eth): a curated overview of formal verification work on Ethereum.
+- **Verity** ([@verityclient](https://x.com/verityclient)): bug discovery in Ethereum clients, with findings published as public bug reports.
+- **libp2p**
+  - [hs-libp2p](https://github.com/adust09/hs-libp2p): author and maintainer of the Haskell implementation of libp2p, developed with outside contributors.
+  - [libp2p-fv](https://github.com/NyxFoundation/libp2p-fv) and [p2p-asm](https://github.com/NyxFoundation/p2p-asm): cross-layer formal verification of Ethereum's GossipSub over QUIC, and a Lean 4 formalization of a verified libp2p implementation over QUIC.
+- **SSZ and consensus clients**: [nyx-ssz](https://github.com/NyxFoundation/nyx-ssz) (a Rust SSZ implementation with Aeneas/Lean refinement proofs), and [bend-ssz](https://github.com/adust09/bend-ssz) and [bend-client](https://github.com/adust09/bend-client) (an SSZ layer and a 3SF-mini consensus client with fork choice, written in Bend).
+- **Writing and curation**
+  - [Mastering Ethereum, 2nd edition, Japanese translation](https://adust09.github.io/ethereumbook-develop-jp/) ([repository](https://github.com/adust09/ethereumbook-develop-jp)).
+  - [awesome-vole](https://github.com/adust09/awesome-vole): a curated list of VOLE (vector oblivious linear evaluation) research and implementations.
+
 ## Talks
 
+- Verity, Cambridge Formal Verification Workshop, Cambridge, 2026
+- Presentation and fireside chat, Ethereum Foundation GPS, 2026
 - [Programmable Cryptography and Smart Contract](https://archive.devcon.org/devcon-7/programmable-cryptography-and-smart-contract/), Lightning Talk, Devcon SEA, Bangkok, 2024
 
 ## Community
