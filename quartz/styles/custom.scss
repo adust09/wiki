@@ -1,3 +1,80 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// single narrow column everywhere (leku-style)
+.page > #quartz-body {
+  display: block;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.4rem 1.3rem 2rem;
+}
+
+// layout still renders empty sidebar divs
+.page > #quartz-body > .sidebar {
+  display: none;
+}
+
+.page > #quartz-body > .center > .page-header {
+  margin: 2.2rem 0 0;
+}
+
+// hide the divider between article and footer
+.page > #quartz-body > .center > hr {
+  display: none;
+}
+
+// article typography
+.page .center > article {
+  margin-top: 0.4rem;
+  font-size: 0.93rem;
+  line-height: 1.78;
+  color: var(--darkgray);
+
+  & h1,
+  & h2,
+  & h3,
+  & h4 {
+    color: var(--dark);
+    margin: 2.1rem 0 0.7rem;
+  }
+
+  & h2 {
+    font-size: 1.2rem;
+  }
+
+  & h3 {
+    font-size: 1.02rem;
+  }
+
+  & img {
+    border-radius: 4px;
+  }
+}
+
+// page title
+.article-title {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 1.42rem;
+}
+
+.content-meta {
+  font-size: 0.82rem;
+  margin-top: 0;
+}
+
+// homepage: name + plain post list
+body[data-slug="index"] {
+  .article-title {
+    font-size: 1.42rem;
+    margin: 0 0 0.2rem;
+  }
+
+  .content-meta,
+  .tags {
+    display: none;
+  }
+
+  // drop the quartz internal-link pill background in the index list
+  .blog-index a.internal {
+    background: none;
+  }
+}

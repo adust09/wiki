@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪼Shouki's wiki",
+    pageTitle: "Shouki Tsuda",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -27,34 +27,34 @@ const config: QuartzConfig = {
     },
     theme: {
       fontOrigin: "googleFonts",
-      cdnCaching: true,
+      cdnCaching: false,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "JetBrains Mono",
+        body: "JetBrains Mono",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#ffffff",
+          lightgray: "#e4e4e4",
+          gray: "#9d9d9d",
+          darkgray: "#3d3d3d",
+          dark: "#111111",
+          secondary: "#111111",
+          tertiary: "#9d9d9d",
+          highlight: "rgba(0, 0, 0, 0.06)",
+          textHighlight: "#fff23699",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#101010",
+          lightgray: "#262626",
+          gray: "#6e6e6e",
+          darkgray: "#b5b5b5",
+          dark: "#ededed",
+          secondary: "#ededed",
+          tertiary: "#7a7a7a",
+          highlight: "rgba(255, 255, 255, 0.07)",
+          textHighlight: "#b3aa0299",
         },
       },
     },
@@ -63,7 +63,7 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "filesystem"],
+        priority: ["frontmatter", "git", "filesystem"],
       }),
       Plugin.SyntaxHighlighting({
         theme: {

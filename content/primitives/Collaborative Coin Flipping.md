@@ -1,7 +1,9 @@
 ---
 date: 2024-10-02
 title: Collaborative Coin Flipping
+aliases: ["../Collaborative-Coin-Flipping"]
 ---
+
 Collaborative Coin Flipping is used in MPC and game theory as a protocol for multiple participants to generate random outcomes fairly and securely without a trusted third party.
 For example, Alice and Bob toss a coin to decide something important.
 

@@ -1,9 +1,10 @@
 ---
 date: 2025-02-07
 title: VOLE in the Head
+aliases: ["../VOLE/VOLE-in-the-Head"]
 ---
 
-I recommend reading them in this order. 
+I recommend reading them in this order.
 
 1. [[What is the VOLE]]
 2. [[Quicksilver]]
@@ -22,15 +23,16 @@ Petter et al. propose the PQ Signature scheme: [FAEST](https://faest.info/) as a
 - In Quicksilver, the following design is used. In Quicksilver, Sender: Verifier, Receiver: Prover, but in VOLE itH, Sender: Prover, Receiver: Verifier.
 - In the past, VOLE-based ZKs (e.g. Quicksilver) did not reveal the $\Delta$ to the prover in order to achieve binding in the VOLE Commitment. This is the reason why it is a Designed Verifier. In VOLE itH, the commitment scheme is made VOLE-independent (hash-based vector commitment), which makes the $\Delta$ public. $\Delta$ can be made public, and as a result, it has been transformed into a public verifiable protocol.
 
-
 Now let's look at the Pros/Cons of VOLE itH.
 **Pros**
+
 - Fast proving
 - Memory efficient
 - Without trusted setup
 - Non-Interactive
 
 **Cons**
+
 - Linear proof size
 - Communication cost
 
@@ -57,7 +59,7 @@ $$
 \end{split}
 $$
 
-If $i=\Delta$, then the element in low $i$ is missing because $\Delta-i=0$. In other words, $\vec{q}=\vec{w}\Delta-\vec{v}$ is not valid, so the verification fails. 
+If $i=\Delta$, then the element in low $i$ is missing because $\Delta-i=0$. In other words, $\vec{q}=\vec{w}\Delta-\vec{v}$ is not valid, so the verification fails.
 In other words, we can say that this is evaluated in terms other than $\Delta$ rather than in terms of $\Delta$.
 
 Since $\Delta$ is random, it can be regarded as Public-coin Protocol, and Challenge can be made Non-Interactive by Fiat-Shamir Transformation.Thus, by replacing the Commitment scheme with an All-but-one Vector Commitment based on the [[GGM Tree]], the order of Commitment and VOLE Correlation can be swapped to become Public Verifiable.
@@ -65,6 +67,7 @@ Since $\Delta$ is random, it can be regarded as Public-coin Protocol, and Challe
 Binding-Hiding is secured by a hash function.
 
 # Protocol Overview
+
 The entire protocol is as follows.
 
 ![[vole-ith.png]]
@@ -73,6 +76,7 @@ Strictly speaking, there will be additional Challenges associated with Consisten
 However, I think it is enough to explain VOLE itH's motivation to make it Public verifiable.
 
 # References
+
 - https://csrc.nist.gov/csrc/media/Projects/post-quantum-cryptography/documents/pqc-seminars/presentations/15-vole-in-the-head-06182024.pdf#page=24.00
 - https://youtu.be/9ToR-IfZXb4?feature=shared
 - https://eprint.iacr.org/2023/996.pdf#page=34.49
