@@ -36,6 +36,12 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
   - [hs-libp2p](https://github.com/adust09/hs-libp2p): author and maintainer of a Haskell implementation of libp2p, with more than 1,400 tests and interoperability tests against other implementations, developed with outside contributors.
   - [libp2p-fv](https://github.com/NyxFoundation/libp2p-fv) and [p2p-asm](https://github.com/NyxFoundation/p2p-asm): cross-layer formal verification of Ethereum's GossipSub over QUIC, and a Lean 4 formalization of a verified libp2p implementation over QUIC.
 - **SSZ**: [nyx-ssz](https://github.com/NyxFoundation/nyx-ssz) (a Rust SSZ implementation with Aeneas/Lean refinement proofs) and [bend-ssz](https://github.com/adust09/bend-ssz) (an SSZ serialization layer written in Bend).
+- **Security**
+  - Security review of a crypto-asset transfer service through Nyx Foundation, covering the web application and transfer APIs, the Fireblocks integration and transaction approval policy, cloud infrastructure, and internal controls (client undisclosed).
+  - Bug bounty hunting on general web services.
+  - Security verification of web services using model checking.
+  - AI automation of security operations (SOC) for web services.
+  - An automated penetration testing environment that combines Kali Linux with AI agents.
 - **Curation**: [awesome-vole](https://github.com/adust09/awesome-vole), a curated list of VOLE (vector oblivious linear evaluation) research and implementations.
 
 ## Writing
