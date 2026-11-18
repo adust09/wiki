@@ -1,6 +1,7 @@
 ---
 date: 2024-10-30
 title: One-Shot Signature
+aliases: ["../PQC/One-Shot-Signature"]
 ---
 
 # Overview
@@ -27,16 +28,15 @@ This is because the key at each block time can only be used once, making it impo
 
 ![スクリーンショット 2024-10-30 9 49 05](https://github.com/user-attachments/assets/24a3a34d-f87a-48cf-98fe-c9562c31c9d3)
 
-
 While no blockchain wants to hard fork and replace the consensus algorithm, it does want to increase security, and research is being conducted to see if OSS can be used to increase resistance to certain types of attacks.
 The agenda is led by Cardano, who first turned his attention to OSS, and Justin Drake and others at Ethereum.
-
 
 For example, it could help prevent long-range attacks in PoS, where an attacker tries to rewrite the history of the blockchain using the old key.
 It could also prevent double voting, thus eliminating the need for slashing conditions in Ethereum, etc.
 Affecting slashing condition could also affect the design of liquid staking and re-staking.
 
 # Reference
+
 https://informatics.ed.ac.uk/sites/default/files/2024-05/Justin%20Drake%20-%20New%20Blockchain%20Paradigm.pdf#page=3.00
 https://vitalik.eth.limo/general/2024/10/29/futures6.html
 https://cexplorer.io/article/understanding-one-shot-signatures

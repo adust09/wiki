@@ -1,6 +1,7 @@
 ---
 date: 2025-05-24
 title: Revise The Laws of Identity
+aliases: ["../Revise-the-Laws-of-Identity"]
 ---
 
 ## Introduction
@@ -10,7 +11,6 @@ In 2005, an era when the internet was still in its dawn. [Kim Cameron](https://e
 "The Laws of Identity" he proposed are still an important guideline for digital society 20 years later.
 
 ![alt text](TheLawsofIdentity.png)
-
 
 Cameron actively continued to promote the laws of user-centric identity, laws that allow users to control their own digital identity. He also spoke out about the widespread misuse of identity and the risks to privacy and autonomy posed by web technologies.
 
@@ -74,6 +74,7 @@ First, technical identity systems must appeal through user convenience and simpl
 - And the system must allow the user to control which digital identity to use and which information to disclose.
 
 Furthermore, the following requirements are included to protect users from deception:
+
 - Verifying the identity of the party requesting information.
 - Ensuring there is no doubt that the information will reach the correct party.
 - And providing a mechanism for the user to be aware of the purpose of information collection.
@@ -88,6 +89,7 @@ The second law comes from the idea that "the solution that discloses the least a
 
 Systems built according to the law of information minimalism become less attractive targets for identity theft because less identifying information is less valuable, further reducing risk.
 For example, the following configuration is desirable:
+
 - Systems should be built on the premise that information leaks can always occur.
 - To mitigate risk, information should only be obtained based on "need to know" and retained only based on "need to retain."
 
@@ -98,7 +100,6 @@ Aggregation of identifying information also aggregates risk, so aggregation must
 ### 3. Justifiable Parties
 
 Some users will not want certain services to know everything about their internet activity. While it may be justifiable to use a government-issued identity for transactions with the government, whether using it for a family wiki or hobby-related activities is "necessary and justifiable" is a cultural and personal judgment.
-
 
 - Digital identity systems must be designed so that the disclosure of identifying information is limited to parties who are in a necessary and justifiable position in a specific identity relationship.
 - The system must allow the user to be aware of the party with whom they are sharing information.

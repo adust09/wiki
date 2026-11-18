@@ -1,7 +1,9 @@
 ---
 date: 2024-10-30
 title: Merkle Mountain Range
+aliases: ["../Merkle-Mountain-Range"]
 ---
+
 Merkle Mountain Range (MMR) is a friend of the Merkle tree and a spatially efficient data structure that allows large data sets to be stored and validated efficiently
 In image, it can be thought of as a list of Merkle trees. The elements of the list (each green mountain) are the MMR itself, as shown in the diagram below
 ![alt text](image.png)

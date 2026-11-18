@@ -1,11 +1,15 @@
 ---
 date: 2025-02-07
 title: Quicksilver
+aliases: ["../VOLE/Quicksilver"]
 ---
+
 I have explained [[What is the VOLE]] previously, and this time I will explain the Quicksilver protocol, which is an efficient VOLE-based ZK.
 
 This blog will describe the Quicksilver configuration, known as an efficient VOLE-based ZK.
+
 # Pros/Cons
+
 Not limited to Quicksilver, VOLE-based ZKs have the following characteristics
 
 **Pros**
@@ -37,12 +41,15 @@ The VOLE Commitment scheme not only satisfies Hiding and Binding, but also has A
 This makes it possible to realize a lightweight Commitment scheme and efficiently generate Proofs even for large circuits.
 
 **Hiding**
+
 - As long as Prover keeps $k$ secret, Verifier cannot know $w$.
 
 **Binding**
+
 - As long as the Verifier keeps secret about the $\Delta$, the Prover cannot construct $m'$ using an illegal $w'$.
 
 **Additive Homomorphism**
+
 - Two Commitments can be added without having to calculate them separately.
 - This property can be used in linear operations such as scalar products
 
@@ -56,7 +63,6 @@ $$m_c=w_c\Delta+k_c$$
 Additive homomorphism can also be used for scalar products.
 
 # The Quicksilver Protocol
-
 
 Quicksilver divides the VOLE correlations into a Preprocessing phase in which the VOLE correlations are calculated in advance, and an Online phase in which the VOLE correlations are actually Proofed & Verified.
 
@@ -92,7 +98,7 @@ $$
 $$
 
 For example, when evaluating the following OR gate, i.e., when you want to prove that $w_a+w_b=w_c$.
- Verifier verifies that the following OLE holds,
+Verifier verifies that the following OLE holds,
 
 $$
 \begin{split}
@@ -101,10 +107,13 @@ m_b=w_b\Delta+k'_b \\
 m_c=w_c\Delta+k'_c \\
 \end{split}
 $$
+
 Furthermore, from Additive Homomorphism, we verify that
+
 $$
 m_a+m_b=(w_a+w_b)\Delta+(k'_a+k'_b)=m_c
 $$
+
 Additive Homomorphism can be applied to linear operations such as scalar multiplication, but a challenge arises when trying to evaluate multiplication (AND gate).
 However, this problem arises when trying to evaluate multiplication (AND gate), since the multiplication of two linear polynomials simply becomes a quadratic polynomial, which does not satisfy the VOLE Correlation.
 
@@ -129,6 +138,7 @@ B&=k_a\cdot k_b-k_c\cdot\Delta \\
  &=A_0+A_1\cdot \Delta+(w_a\cdot w_b-w_c)\cdot\Delta^2 \\
 \end{split}
 $$
+
 If $w_a\cdot w_b=w_c$ holds, then the term $\Delta^2$ disappears and $B=A_0+A_1\cdot\Delta$
 can be verified since $B=A_0+A_1\cdot\Delta$.
 
