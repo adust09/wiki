@@ -53,7 +53,7 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
 
 ## Community
 
-- Founder and Representative Director of Merkle Japan, a general incorporated association established in October 2026; co-hosted the Resilient Networking Hub (libp2p Hub) at Devcon 8.
+- Founder and Representative Director of [Merkle Japan](https://merklejapan.eth.limo/), a general incorporated association established in October 2026; co-hosted the Resilient Networking Hub (libp2p Hub) at Devcon 8.
 - Organised Advanced Cryptography Program (ACP) 2026, part of the cryptography and blockchain study group at the University of Tokyo.
 - Founded [Bitpickers](https://kyutech-bc.connpass.com/), a blockchain research community in Japan.
 - Organised [Progcrypto Camp](https://luma.com/1rg8psb1) (2024), a four-day cryptography camp for Ethereum developers.
