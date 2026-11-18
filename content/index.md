@@ -66,6 +66,7 @@ Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge pro
 ## Education
 
 - **[Kyushu Institute of Technology](https://www.kyutech.ac.jp)** — B.Eng. in Information Engineering, 2018–2022
+- **Ethereum University** — 2022
 
 ## Links
 
