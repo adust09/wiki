@@ -5,48 +5,56 @@ aliases:
   - cv
 ---
 
-Shouki Tsuda is a research engineer based in Tokyo working on zero-knowledge proofs, MPC, FHE, and Ethereum's transition to post-quantum security. He has worked in the blockchain industry since 2018, building protocol layers for several projects.
+Shouki Tsuda is a software and security engineer based in Tokyo. He builds and verifies systems software, from peer-to-peer networking to mathematically verified code, and reviews the security of web services and cloud infrastructure. His research covers privacy-preserving cryptography and the move to quantum-resistant security, and he has built core blockchain infrastructure since 2018.
+
+## Skills
+
+- **Languages**: Rust, Haskell, Lean 4, Java, Python, TypeScript/JavaScript, C, assembly (RISC-V, x86-64), Solidity
+- **Security**: web application and API security review, cloud and internal-control review, penetration testing, bug bounty hunting, AI-assisted security operations
+- **Verification**: theorem proving (Lean 4), model checking, interoperability testing
+- **Systems**: peer-to-peer networking, data encoding, cryptographic implementation
 
 ## Current
 
 - **[Nyx Foundation](https://nyx.foundation)** — Research engineer, 2025–
-  Leads research and development on protocol safety and cryptographic implementation: formal verification of post-quantum signature schemes for Ethereum upgrades and bug discovery in Ethereum clients.
+  Leads research and development on blockchain safety: mathematical verification of quantum-resistant signatures for Ethereum upgrades, and bug discovery in Ethereum's core software.
 - **[MynaWallet](https://mynawallet.jp)** — Software engineer, 2025–
   Blockchain and backend development.
 - **[Ethereum Foundation](https://ethereum.foundation)** — Grantee, 2025–
   Research on VOLE-based zero-knowledge proofs.
 - **Independent** — 2024–
-  Applied R&D combining Ethereum and cryptographic theory.
+  Applied R&D turning cryptographic theory into working software.
 
 ## Previous
 
 - **[Hana Network](https://www.hana.network)** — Interim CTO, 2024; Project Manager, 2023–2024
-  Hana is a decentralized privacy layer with trustless interoperability.
+  Hana is privacy infrastructure connecting multiple blockchains.
 - **[Rakuten](https://global.rakuten.com/corp/)** — Software engineer, 2022–2023
+  Built web applications for financial services in Java.
 
 ## Selected Work
 
-- **Formal verification of Ethereum**
-  - [formal-leanSpec](https://github.com/NyxFoundation/formal-leanSpec): Lean 4 formalization of Ethereum's lean consensus specification.
-  - [cl-asm](https://github.com/NyxFoundation/cl-asm) and [LeanAsm](https://github.com/NyxFoundation/LeanAsm): a prototype consensus-layer state transition function in Lean 4-verified RISC-V assembly, built on a reusable verified-assembly foundation (RV64, with an x86-64 backend), plus the companion SSZ library [ssz-asm](https://github.com/NyxFoundation/ssz-asm).
-  - [ethereum-proof-atlas](https://github.com/NyxFoundation/ethereum-proof-atlas): a catalogue of Ethereum-related formal proofs that can be verified locally.
-  - [formal-eth](https://github.com/NyxFoundation/formal-eth): a curated overview of formal verification work on Ethereum.
-- **[Verity](https://github.com/NyxFoundation/verity)** ([@verityclient](https://x.com/verityclient)): Nyx Foundation's formally verified Ethereum consensus-layer client. Rust code is translated to Lean with Aeneas and proved there ([proofs](https://github.com/NyxFoundation/verity-aeneas-proofs)), with a Lean core called over FFI and Kani model checking. It has found specification bugs in leanSpec and a u64 overflow.
-- **libp2p**
-  - [hs-libp2p](https://github.com/adust09/hs-libp2p): author and maintainer of a Haskell implementation of libp2p, with more than 1,400 tests and interoperability tests against other implementations, developed with outside contributors.
-  - [libp2p-fv](https://github.com/NyxFoundation/libp2p-fv) and [p2p-asm](https://github.com/NyxFoundation/p2p-asm): cross-layer formal verification of Ethereum's GossipSub over QUIC, and a Lean 4 formalization of a verified libp2p implementation over QUIC.
-- **SSZ**: [nyx-ssz](https://github.com/NyxFoundation/nyx-ssz) (a Rust SSZ implementation with Aeneas/Lean refinement proofs) and [bend-ssz](https://github.com/adust09/bend-ssz) (an SSZ serialization layer written in Bend).
 - **Security**
-  - Security review of a crypto-asset transfer service through Nyx Foundation, covering the web application and transfer APIs, the Fireblocks integration and transaction approval policy, cloud infrastructure, and internal controls (client undisclosed).
+  - Security review of a crypto-asset transfer service through Nyx Foundation, covering the web application and transfer APIs, the custody integration and transaction approval policy, cloud infrastructure, and internal controls (client undisclosed).
   - Bug bounty hunting on general web services.
   - Security verification of web services using model checking.
-  - AI automation of security operations (SOC) for web services.
-  - An automated penetration testing environment that combines Kali Linux with AI agents.
+  - AI automation of security monitoring for web services.
+  - An automated penetration testing environment driven by AI agents.
+- **Verified Ethereum software**
+  - [formal-leanSpec](https://github.com/NyxFoundation/formal-leanSpec): a machine-checked version of Ethereum's next-generation consensus specification.
+  - [cl-asm](https://github.com/NyxFoundation/cl-asm) and [LeanAsm](https://github.com/NyxFoundation/LeanAsm): a prototype of Ethereum's core logic in verified low-level code, built on a reusable verification toolkit, plus the companion encoding library [ssz-asm](https://github.com/NyxFoundation/ssz-asm).
+  - [ethereum-proof-atlas](https://github.com/NyxFoundation/ethereum-proof-atlas): a catalogue of correctness proofs about Ethereum that anyone can re-check.
+  - [formal-eth](https://github.com/NyxFoundation/formal-eth): a curated overview of verification work on Ethereum.
+- **[Verity](https://github.com/NyxFoundation/verity)** ([@verityclient](https://x.com/verityclient)): Nyx Foundation's mathematically verified Ethereum node software ([proofs](https://github.com/NyxFoundation/verity-aeneas-proofs)). It has found bugs in the official specification and an integer overflow.
+- **Peer-to-peer networking**
+  - [hs-libp2p](https://github.com/adust09/hs-libp2p): author and maintainer of a Haskell implementation of libp2p, a peer-to-peer networking stack, with more than 1,400 tests and compatibility tests against other implementations, developed with outside contributors.
+  - [libp2p-fv](https://github.com/NyxFoundation/libp2p-fv) and [p2p-asm](https://github.com/NyxFoundation/p2p-asm): verification of Ethereum's message propagation protocol, and a verified peer-to-peer networking implementation.
+- **Ethereum's encoding scheme (SSZ)**: [nyx-ssz](https://github.com/NyxFoundation/nyx-ssz) (a verified Rust implementation) and [bend-ssz](https://github.com/adust09/bend-ssz) (an implementation in a parallel programming language).
 - **Curation**: [awesome-vole](https://github.com/adust09/awesome-vole), a curated list of VOLE (vector oblivious linear evaluation) research and implementations.
 
 ## Writing
 
-- A book on programmable cryptography (in progress).
+- A book on cryptography for computing on private data (in progress).
 - [Mastering Ethereum, 2nd edition, Japanese translation](https://adust09.github.io/ethereumbook-develop-jp/) ([repository](https://github.com/adust09/ethereumbook-develop-jp)), co-translated with Yukishige Nakajo and Wataru Shinohara.
 
 ## Talks
